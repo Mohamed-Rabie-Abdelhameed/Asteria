@@ -79,6 +79,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["geist", "sans-serif"],
+        display: ["itc", "serif"],
       },
     },
   },

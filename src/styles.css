@@ -4,7 +4,19 @@
 
 @font-face {
   font-family: "geist";
-  src: url("/assets/fonts/GeistVF.woff") format("woff");
+  src: url("assets/fonts/GeistVF.woff") format("woff");
   font-weight: 100 900;
   font-style: normal;
+}
+
+
+@font-face {
+  font-family: "itc";
+  src: url("assets/fonts/itc.woff") format("woff");
+  font-weight: light;
+  font-style: italic;
+}
+
+.itc {
+  font-family: "itc";
 }
