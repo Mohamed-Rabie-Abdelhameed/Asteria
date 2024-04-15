@@ -1,19 +1,22 @@
-<nav>
+<nav
+  class="w-[90%] lg:w-max absolute top-6 lg:top-8 left-1/2 -translate-x-1/2 bg-gray shadow-2xl border-t-2 border-x-2 border-lightgray z-50"
+  [ngClass]="{
+    'rounded-full ': isMenuCollapsed,
+    'lg:rounded-full lg:border-b-0 rounded-2xl border-b-2': !isMenuCollapsed
+  }"
+>
   <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 px-2 py-4"
+    class="flex items-center flex-wrap lg:flex-nowrap justify-between mx-auto py-2 pr-2 pl-4 lg:gap-24"
   >
-    <a routerLink="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img
-        src="assets/images/logo.svg"
-        class="h-12 md:h-16"
-        alt="Asteria Logo"
-      />
-    </a>
+    <button class="flex items-center space-x-3">
+      <img src="assets/images/l.svg" class="h-6 lg:h-8" alt="Asteria Logo" />
+    </button>
+
     <button
       (click)="toggleMenu()"
       data-collapse-toggle="navbar-default"
       type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-dark rounded-lg md:hidden hover:bg-light focus:outline-none focus:ring-2 focus:ring-gray-200 transition duration-300 ease-in-out"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-lightgray-600 rounded-lg md:hidden focus:outline-none transition duration-300 ease-in-out"
       aria-controls="navbar-default"
       aria-expanded="false"
     >
@@ -36,7 +39,7 @@
       </svg>
       }@else{
       <svg
-        class="text-dark w-5 h-5"
+        class="w-5 h-5"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -69,55 +72,70 @@
       </svg>
       }
     </button>
+
     <div
       class="hidden w-full md:block md:w-auto"
       id="navbar-default"
       [ngClass]="{ hidden: isMenuCollapsed, block: !isMenuCollapsed }"
     >
       <ul
-        class=" flex flex-col md:items-center mt-2 md:m-0 p-2 md:p-0 border border-gray-100 rounded-lg md:flex-row md:space-x-6 rtl:space-x-reverse  md:border-0"
+        class="text-lightgray-600 text-sm flex flex-col md:items-center p-2 md:p-0 md:flex-row md:space-x-8"
       >
         <li>
-          <a
-            routerLink="/"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            (click)="toggleMenu()"
-            class="block py-2 px-3 rounded hover:text-primary md:p-0 transition duration-300 ease-in-out"
+          <button
+            (click)="scrollToSection('work')"
+            class="block py-2 px-3 rounded hover:text-light md:p-0 transition duration-300 ease-in-out"
             aria-current="page"
-            >Home</a
           >
+            Work
+          </button>
         </li>
         <li>
-          <a
-            routerLink="/menu"
-            routerLinkActive="active"
-            (click)="toggleMenu()"
-            class="block py-2 px-3 rounded hover:text-primary md:p-0 transition duration-300 ease-in-out"
-            >Menu</a
+          <button
+            (click)="scrollToSection('services')"
+            class="block py-2 px-3 rounded hover:text-light md:p-0 transition duration-300 ease-in-out"
           >
+            Services
+          </button>
         </li>
         <li>
-          <a
-            routerLink="/about"
-            routerLinkActive="active"
-            (click)="toggleMenu()"
-            class="block py-2 px-3 rounded hover:text-primary md:p-0 transition duration-300 ease-in-out"
+          <button
+            (click)="scrollToSection('about')"
+            class="block py-2 px-3 rounded hover:text-light md:p-0 transition duration-300 ease-in-out"
           >
-            About
-          </a>
+            About Us
+          </button>
         </li>
         <li>
-          <a
-            routerLink="/contact"
-            routerLinkActive="active"
-            (click)="toggleMenu()"
-            class="block py-2 px-3 rounded hover:text-primary md:p-0 transition duration-300 ease-in-out"
+          <button
+            (click)="scrollToSection('testimonials')"
+            class="block py-2 px-3 rounded hover:text-light md:p-0 transition duration-300 ease-in-out"
           >
-            Contact
-          </a>
+            Testimonials
+          </button>
+        </li>
+        <li>
+          <button
+            (click)="scrollToSection('faq')"
+            class="block py-2 px-3 rounded hover:text-light md:p-0 transition duration-300 ease-in-out"
+          >
+            FAQ
+          </button>
+        </li>
+        <li class="lg:hidden">
+          <button
+            class="text-dark font-medium bg-light px-4 py-3 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+          >
+            Work with us
+          </button>
         </li>
       </ul>
     </div>
+
+    <button
+      class="hidden lg:block font-medium bg-light px-4 py-3 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+    >
+      Work with us
+    </button>
   </div>
 </nav>

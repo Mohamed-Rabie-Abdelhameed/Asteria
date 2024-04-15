@@ -17,4 +17,16 @@ export class NavbarComponent {
   toggleMenu() {
     this.isMenuCollapsed = !this.isMenuCollapsed;
   }
+
+  scrollToSection(sectionId: string) {
+    if (sectionId === 'hero') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      this.isMenuCollapsed = true;
+    }
+  }
 }
