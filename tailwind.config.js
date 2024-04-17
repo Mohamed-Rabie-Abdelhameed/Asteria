@@ -41,7 +41,7 @@ module.exports = {
           900: "#f8fde0",
         },
         light: {
-          DEFAULT: "#f1f2ee",
+          DEFAULT: "#f7f9fc",
           100: "#33362a",
           200: "#666c53",
           300: "#979e81",
