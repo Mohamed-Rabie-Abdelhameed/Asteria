@@ -1,40 +1,52 @@
-<header>
-  <app-navbar></app-navbar>
-</header>
-<main>
+<main class="max-w-7xl mx-auto px-4 md:px-0 md:py-8">
   <!-- hero -->
   <section
-    class="h-dvh bg bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-light text-center px-2 md:px-4 py-4 md:pt-12"
+    class="text-dark flex flex-col items-center justify-center text-center py-12"
   >
-    <span
-      class="text-xs md:text-sm font-semibold grad text-dark rounded-full px-4 py-2"
-    >
-      Where Web Dreams Sparkle and Shine
-    </span>
     <h1
-      class="my-8 text-balance text-5xl md:font-light md:text-7xl lg:text-8xl max-w-2xl md:max-w-3xl lg:max-w-5xl"
+      class="text-balance text-4xl font-medium md:text-6xl lg:text-7xl md:max-w-2xl lg:max-w-5xl"
     >
-      Crafting Websites as <span class="font-display">Brilliant</span> as the
-      Stars
+      Crafting Websites as <span class="font-display grad">Brilliant</span> as
+      the Stars
     </h1>
     <p
-      class="text-lightgray-600 text-sm md:text-lg max-w-2xl text-balance mb-8"
+      class="my-8 md:my-10 text-lightgray text-md md:text-2xl max-w-3xl text-balance"
     >
-      We are a design and development agency dedicated to crafting innovative
-      and creative digital solutions that shape the future.
+      Crafting pixel-perfect websites for companies that value attention to
+      detail and passionate dedication.
     </p>
-    <div class="flex flex-wrap gap-4 items-center justify-center">
-      <button
-        class="text-dark font-medium bg-light px-6 py-3 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+    <button
+      class="text-primary flex items-center gap-1 font-medium text-lg md:text-xl hover:gap-3 hover:bg-primary-900 px-4 py-2 rounded-xl transition-all duration-300 ease"
+    >
+      Start a Project Request
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4 inline-block"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
-        Book a Consultation
-      </button>
-      <button
-        class="font-medium border-2 border-light px-6 py-3 rounded-full hover:border-primary transition duration-300 ease-in-out"
-      >
-        See Our Work
-      </button>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="3"
+          d="M9 5l7 7-7 7"
+        ></path>
+      </svg>
+    </button>
+  </section>
+
+  <!-- spacer-sm -->
+  <div class="h-2 md:h-12"></div>
+
+  <!-- carousel -->
+  <section class="relative md:px-4 max-w-5xl mx-auto">
+    <div
+      class="rounded-lg overflow-hidden h-[82%] w-[80%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    >
+      <app-carousel></app-carousel>
     </div>
+    <img src="assets/images/hero.webp" alt="background" />
   </section>
 
   <!-- spacer -->

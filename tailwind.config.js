@@ -64,7 +64,7 @@ module.exports = {
           800: "#39ffc0",
           900: "#9cffe0",
         },
-        gray: "#323e58",
+        gray: "#c8c8c9",
         lightgray: {
           DEFAULT: "#6e7594",
           100: "#f4f5f7",

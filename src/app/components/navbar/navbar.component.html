@@ -1,15 +1,19 @@
 <nav
-  class="w-[90%] lg:w-max absolute top-6 lg:top-8 left-1/2 -translate-x-1/2 bg-gray shadow-2xl border-t-2 border-x-2 border-lightgray z-50"
+  class="w-[95%] lg:w-max mt-6 md:mt-8 mx-auto bg-dark shadow-xl border-t-2 border-x-2 border-lightgray z-50"
   [ngClass]="{
     'rounded-full ': isMenuCollapsed,
     'lg:rounded-full lg:border-b-0 rounded-2xl border-b-2': !isMenuCollapsed
   }"
 >
   <div
-    class="flex items-center flex-wrap lg:flex-nowrap justify-between mx-auto py-1 pr-1 pl-2 lg:gap-24"
+    class="flex items-center flex-wrap lg:flex-nowrap justify-between mx-auto py-2 pl-4 pr-2 lg:gap-32"
   >
     <button class="flex items-center space-x-3">
-      <img src="assets/images/logo-light.svg" class="h-6 lg:h-8" alt="Asteria Logo" />
+      <img
+        src="assets/images/logo-light.svg"
+        class="h-6 lg:h-8"
+        alt="Asteria Logo"
+      />
     </button>
 
     <button
@@ -79,7 +83,7 @@
       [ngClass]="{ hidden: isMenuCollapsed, block: !isMenuCollapsed }"
     >
       <ul
-        class="text-lightgray-600 text-sm flex flex-col md:items-center p-2 md:p-0 md:flex-row md:space-x-8"
+        class="text-lightgray-300 flex flex-col md:items-center p-2 md:p-0 md:flex-row md:space-x-8"
       >
         <li>
           <button
@@ -119,23 +123,23 @@
             (click)="scrollToSection('faq')"
             class="block py-2 px-3 rounded hover:text-light md:p-0 transition duration-300 ease-in-out"
           >
-            FAQ
+            FAQs
           </button>
         </li>
         <li class="lg:hidden">
           <button
-            class="text-dark font-medium bg-light px-4 py-3 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+            class="w-full mt-4 text-dark font-medium bg-light px-4 py-3 rounded-full hover:bg-accent transition duration-300 ease-in-out"
           >
-            Work with us
+            Project Request
           </button>
         </li>
       </ul>
     </div>
 
     <button
-      class="hidden lg:block font-medium bg-light px-4 py-3 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+      class="hidden lg:block font-medium bg-light px-4 py-3 rounded-full hover:bg-accent transition duration-300 ease-in-out"
     >
-      Work with us
+      Project Request
     </button>
   </div>
 </nav>

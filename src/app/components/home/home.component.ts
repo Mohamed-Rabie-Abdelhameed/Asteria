@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
 import { ServiceCardComponent } from '../service-card/service-card.component';
+import { CarouselComponent } from '../carousel/carousel.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, ServiceCardComponent],
+  imports: [ServiceCardComponent, CarouselComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -17,12 +17,6 @@ export class HomeComponent {
         'We craft stunning websites that not only captivate visitors but also convert them into leads or customers. Our user-centered approach ensures a seamless user experience (UX) that keeps them engaged.',
       img: 'assets/images/services/web.svg',
     },
-    // {
-    //   title: 'Content Management System',
-    //   description:
-    //     "We integrate user-friendly Admin dashboards, allowing you to update your website content with ease. Focus on your business, we'll handle the tech behind the scenes.",
-    //   img: 'assets/images/services/cms.svg',
-    // },
     {
       title: 'E-commerce Development',
       description:
