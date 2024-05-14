@@ -1,4 +1,4 @@
-<main class="max-w-7xl mx-auto px-4 md:px-0 md:py-8">
+<main class="max-w-7xl mx-auto px-4 lg:px-0 md:py-8">
   <!-- hero -->
   <section
     class="text-dark flex flex-col items-center justify-center text-center py-12"
@@ -53,7 +53,7 @@
   <div class="h-20 md:h-40"></div>
 
   <!-- services -->
-  <section class="px-2 md:px-4">
+  <!-- <section class="px-2 md:px-4">
     <div class="text-center">
       <h1 class="text-primary-700 md:text-lg font-semibold">OUR SERVICES</h1>
       <h2 class="font-semibold text-3xl md:text-4xl lg:text-6xl my-4 md:my-6">
@@ -67,6 +67,115 @@
       @for (service of services; track $index) {
       <app-service-card [service]="service"></app-service-card>
       }
+    </div>
+  </section> -->
+
+  <!-- services -->
+  <section>
+    <div
+      class="w-full flex flex-col lg:flex-row justify-between gap-8 lg:gap-24"
+    >
+      <div>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl max-w-3xl text-balance">
+          Much more<span class="text-lightgray-800">
+            than just another web agency</span
+          >
+        </h2>
+      </div>
+
+      <div>
+        <p class="text-lightgray text-lg md:text-xl max-w-2xl text-balance">
+          Much more than a design agency, Asteria is a full-service agency made
+          out of numerous talents, ready to work towards realizing your project
+          and your goals.
+        </p>
+      </div>
+    </div>
+
+    <!-- spacer-sm -->
+    <div class="h-8 md:h-24"></div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div
+        class="flex flex-col gap-8 lg:gap-12 shadow-sm border-2 border-light-500"
+      >
+        <div class="w-full">
+          <img
+            class="float-end h-40 md:h-64"
+            src="assets/images/services/service1.svg"
+            alt="UI/UX Design"
+          />
+        </div>
+        <div class="px-6 md:px-10 lg:px-16 mb-6 md:mb-10 lg:mb-16">
+          <h3
+            class="text-3xl font-display md:text-4xl lg:text-5xl text-balance mb-6 md:mb-10"
+          >
+            UI/UX Design
+          </h3>
+          <p class="text-lightgray md:text-lg text-balance">
+            Whether it's a presentation website, an e-commerce, or a web app. We
+            provide detailed Design Systems along with mock-ups tailored for
+            both desktop and responsive versions, offering comprehensive
+            guidelines for interface development. We prioritize crafting
+            interfaces that are not only visually appealing but also highly
+            functional, striking the perfect balance between beauty and
+            usability.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-8 lg:gap-12 shadow-sm border-2 border-light-500"
+      >
+        <div class="w-full">
+          <img
+            class="h-40 md:h-64"
+            src="assets/images/services/service2.svg"
+            alt="Graphic Design"
+          />
+        </div>
+        <div class="px-6 md:px-10 lg:px-16 mb-6 md:mb-10 lg:mb-16">
+          <h3
+            class="text-3xl font-display md:text-4xl lg:text-5xl text-balance mb-6 md:mb-10"
+          >
+            Graphic Design
+          </h3>
+          <p class="text-lightgray md:text-lg text-balance">
+            At Asteria, we offer more than just stunning visuals. We specialize
+            in providing comprehensive support for your written, oral, and
+            visual communications. Whether you need assistance with copywriting,
+            2D/3D illustrations, or video production, we're here to help you
+            craft and convey these content elements in alignment with your
+            branding strategy, tone of voice, and brand positioning.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="lg:col-span-2 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 shadow-sm border-2 border-light-500 p-6 md:p-10 lg:p-16"
+      >
+        <div class="w-full">
+          <img
+            class="h-40 md:h-64"
+            src="assets/images/services/service3.svg"
+            alt="Web Development"
+          />
+        </div>
+        <div>
+          <h3
+            class="text-3xl font-display md:text-4xl lg:text-5xl text-balance mb-6 md:mb-10"
+          >
+            Development
+          </h3>
+          <p class="text-lightgray md:text-lg text-balance">
+            Our web development services are tailored to your specific needs. We
+            specialize in crafting custom websites and web applications that are
+            not only visually appealing but also highly functional and
+            user-friendly. We use the latest technologies and best practices to
+            ensure that your website is fast, secure, and accessible to all
+            users, regardless of their device or location.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 

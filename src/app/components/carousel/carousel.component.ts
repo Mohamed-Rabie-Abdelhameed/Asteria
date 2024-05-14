@@ -12,6 +12,7 @@ export class CarouselComponent {
   slides = [
     { img: 'assets/images/carousel/slide3.webp' },
     { img: 'assets/images/carousel/slide1.webp' },
+    { img: 'assets/images/carousel/slide5.webp' },
     { img: 'assets/images/carousel/slide2.webp' },
     { img: 'assets/images/carousel/slide4.webp' },
   ];
@@ -19,7 +20,7 @@ export class CarouselComponent {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     dots: false,
     infinite: true,
     arrows: false,
