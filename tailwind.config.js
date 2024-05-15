@@ -66,7 +66,7 @@ module.exports = {
         },
         gray: "#c8c8c9",
         lightgray: {
-          DEFAULT: "#6e7594",
+          DEFAULT: "#5b6278",
           100: "#f4f5f7",
           200: "#e9ecef",
           300: "#dfe3eb",
@@ -74,7 +74,7 @@ module.exports = {
           500: "#c9cfda",
           600: "#bfc5d1",
           700: "#b4bac8",
-          800: "#aab0bf",
+          800: "#7e8686",
         },
       },
       fontFamily: {
