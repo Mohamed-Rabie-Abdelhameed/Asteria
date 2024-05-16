@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ServiceCardComponent } from '../service-card/service-card.component';
 import { CarouselComponent } from '../carousel/carousel.component';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ServiceCardComponent, CarouselComponent],
+  imports: [ServiceCardComponent, CarouselComponent, NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

@@ -1,7 +1,7 @@
-<main class="max-w-7xl mx-auto px-4 lg:px-0 md:py-8">
+<main class="md:py-8">
   <!-- hero -->
   <section
-    class="text-dark flex flex-col items-center justify-center text-center py-12"
+    class="max-w-7xl mx-auto px-4 lg:px-0 text-dark flex flex-col items-center justify-center text-center py-12"
   >
     <h1
       class="text-balance text-4xl font-medium md:text-6xl lg:text-7xl md:max-w-2xl lg:max-w-5xl"
@@ -21,7 +21,7 @@
       Start a Project Request
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-4 w-4 inline-block"
+        class="w-4 h-4 inline-block"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -40,20 +40,28 @@
   <div class="h-2 md:h-12"></div>
 
   <!-- carousel -->
-  <section class="relative md:px-4 max-w-5xl mx-auto">
+  <section
+    class="max-w-7xl mx-auto px-4 lg:px-0 relative md:px-4 max-w-5xl mx-auto"
+  >
     <div
       class="rounded-lg overflow-hidden h-[82%] w-[80%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
     >
       <app-carousel></app-carousel>
     </div>
-    <img src="assets/images/hero.webp" alt="background" />
+    <img
+      ngSrc="assets/images/hero.webp"
+      width="2500"
+      height="1482"
+      priority
+      alt="background"
+    />
   </section>
 
   <!-- spacer -->
   <div class="h-20 md:h-40"></div>
 
   <!-- services -->
-  <section>
+  <section class="max-w-7xl mx-auto px-4 lg:px-0">
     <div
       class="w-full flex flex-col lg:flex-row justify-between gap-8 lg:gap-24"
     >
@@ -106,7 +114,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col gap-8 lg:gap-12 shadow-sm border-2  bg-white border-light-500"
+        class="flex flex-col gap-8 lg:gap-12 shadow-sm border-2 bg-white border-light-500"
       >
         <div class="w-full">
           <img
@@ -156,6 +164,218 @@
             ensure that your website is fast, secure, and accessible to all
             users, regardless of their device or location.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- spacer -->
+  <div class="h-20 md:h-40"></div>
+
+  <!-- benefits -->
+  <section
+    class="z-0 relative bg-dark-800 px-4 lg:px-0 py-16 lg:py-32 overflow-hidden"
+  >
+    <!-- gradient1 -->
+    <div
+      class="absolute inset-x-0 -z-10 top-44 overflow-hidden blur-3xl sm:top-72"
+      aria-hidden="true"
+    >
+      <div
+        class="relative rounded-full left-1/2 aspect-[2/3] w-full lg:w-[70%] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#3856c4] to-[#C9AAFF] opacity-[20%] mix-blend-multiply"
+      ></div>
+    </div>
+    <!-- gradient2 -->
+    <div
+      class="absolute inset-x-0 -z-10 bottom-24 overflow-hidden blur-3xl sm:bottom-0"
+      aria-hidden="true"
+    >
+      <div
+        class="relative rounded-full left-1/2 aspect-[3/2] w-full lg:w-[50%] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#644dff] to-[#dcf763] opacity-[20%] mix-blend-multiply"
+      ></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto">
+      <h2
+        class="text-center mx-auto text-light text-balance text-4xl md:text-6xl lg:text-7xl md:max-w-2xl lg:max-w-5xl"
+      >
+        Your ultimate <br />
+        Digital partner.
+      </h2>
+
+      <!-- spacer-sm -->
+      <div class="h-12 md:h-32"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        <!-- r1-c1 -->
+        <div class="grid grid-cols-2 gap-3">
+          <div
+            class="flex flex-col justify-center items-center bg-dark-800 border rounded-lg p-6 md:p-8 border-[rgba(176,176,176,0.4)] text-light"
+          >
+            <p class="text-3xl md:text-4xl text-light mb-2">50+</p>
+            <p class="md:text-lg text-gray">happy clients</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center bg-dark-800 border rounded-lg p-6 md:p-8 border-[rgba(176,176,176,0.4)] text-light"
+          >
+            <p class="text-3xl md:text-4xl text-light mb-2">
+              6 <span class="text-lg md:text-2xl">years</span>
+            </p>
+            <p class="md:text-lg text-gray">experience</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center bg-dark-800 border rounded-lg p-6 md:p-8 border-[rgba(176,176,176,0.4)] text-light"
+          >
+            <p class="text-3xl md:text-4xl text-light mb-2 relative">80+</p>
+            <p class="md:text-lg text-gray">projects</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center bg-dark-800 border rounded-lg p-6 md:p-8 border-[rgba(176,176,176,0.4)] text-light"
+          >
+            <p class="text-3xl md:text-4xl text-light mb-2">100%</p>
+            <p class="md:text-lg text-gray">satisfaction</p>
+          </div>
+        </div>
+
+        <!-- r1-c2 -->
+        <div
+          class="bg-dark-800 border rounded-lg p-6 md:p-16 border-[rgba(176,176,176,0.4)] text-light"
+        >
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl text-balance mb-4 md:mb-6"
+          >
+            Blending Design Aesthetics with Technical Proficiency
+          </h3>
+          <p class="text-gray md:text-lg text-balance">
+            Years of web design expertise mean we're all about excellent design
+            and meticulous attention to detail. Say goodbye to frustrating
+            back-and-forth with developers who lack an eye for design. Trust our
+            skilled, experienced team to bring your visions to life just as you
+            imagined.
+          </p>
+        </div>
+
+        <!-- r2 -->
+        <div
+          class="lg:col-span-2 flex flex-col lg:flex-row gap-8 bg-dark-800 border rounded-lg p-6 md:p-16 border-[rgba(176,176,176,0.4)] text-light"
+        >
+          <div class="lg:w-1/2">
+            <h3
+              class="text-2xl md:text-3xl lg:text-4xl text-balance mb-4 md:mb-6"
+            >
+              A Comprehensive Approach to Web Design
+            </h3>
+            <p class="text-gray md:text-lg text-balance">
+              We don't just design websites; we craft digital experiences that
+              captivate and engage your audience. Our comprehensive approach to
+              web design ensures that your website is not only visually stunning
+              but also highly functional and user-friendly. From concept to
+              completion, we work closely with you to create a website that
+              reflects your brand identity and achieves your business goals.
+            </p>
+          </div>
+          <div class="lg:w-1/2 float-end">
+            <img
+              class="w-44 lg:w-72 float-end"
+              src="assets/images/benefits/benefit1.svg"
+              alt="Web Design"
+            />
+          </div>
+        </div>
+
+        <!-- r3-c1 -->
+        <div
+          class="flex overflow-hidden flex-col gap-8 justify-between bg-dark-800 border rounded-lg pt-6 pl-6 md:pl-16 md:pt-16 border-[rgba(176,176,176,0.4)] text-light"
+        >
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl text-balance mb-4 md:mb-6"
+          >
+            Clean, efficient code.
+          </h3>
+
+          <img
+            class="w-full float-end"
+            src="assets/images/benefits/benefit2.webp"
+            alt="Clean code"
+          />
+        </div>
+
+        <!-- r3-c2 -->
+        <div
+          class="flex overflow-hidden flex-col gap-12 justify-between bg-dark-800 border rounded-lg p-6 md:p-16 border-[rgba(176,176,176,0.4)] text-light"
+        >
+          <h3
+            class="text-2xl md:text-3xl lg:text-4xl text-balance mb-4 md:mb-6"
+          >
+            Fast turnaround times.
+          </h3>
+          <div
+            class="z-0 relative text-4xl md:text-6xl flex flex-col items-center gap-2 pb-4 lg:pb-0"
+          >
+            <div
+              class="absolute inset-x-0 -z-10 -top-8 overflow-hidden blur-3xl"
+              aria-hidden="true"
+            >
+              <div
+                class="relative rounded-full left-1/2 aspect-[1/1] w-[80%] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#5b6278] to-[#C9AAFF] opacity-[8%] mix-blend-multiply"
+              ></div>
+            </div>
+            <div class="relative opacity-[15%]">
+              <div
+                class="absolute top-1/2 w-[115%] h-2 left-1/2 -translate-x-1/2 rounded-2xl bg-light dev-speed-month-line"
+              ></div>
+              <div>Months</div>
+            </div>
+            <div class="weeks">Weeks</div>
+          </div>
+        </div>
+
+        <!-- r4-c1 -->
+        <div
+          class="bg-dark-800 flex flex-col lg:flex-row gap-8 border rounded-lg pl-6 pt-6 md:pl-16 md:pt-16 border-[rgba(176,176,176,0.4)] text-light"
+        >
+          <div class="lg:w-1/2">
+            <h3
+              class="text-2xl md:text-3xl lg:text-4xl text-balance mb-4 md:mb-6"
+            >
+              Responsive Development
+            </h3>
+            <p class="text-gray md:text-lg text-balance pb-8 lg:pb-0">
+              Our websites are designed to be responsive and accessible on all
+              devices.
+            </p>
+          </div>
+          <div class="w-full h-full flex justify-end items-end">
+            <img
+              class="h-full w-full"
+              src="assets/images/benefits/benefit4.webp"
+              alt="Responsive Development"
+            />
+          </div>
+        </div>
+
+        <!-- r4-c2 -->
+        <div
+          class="bg-dark-800 flex flex-col lg:flex-row justify-between gap-8 border rounded-lg pr-6 pt-6 md:pr-16 md:pt-16 border-[rgba(176,176,176,0.4)] text-light"
+        >
+          <div class="order-2 lg:order-1 lg:w-1/2">
+            <img
+              class="w-full"
+              src="assets/images/benefits/benefit3.webp"
+              alt="Responsive Development"
+            />
+          </div>
+          <div class="pl-6 lg:pl-0 order-1 lg:order-2 lg:w-1/2">
+            <h3
+              class="text-2xl md:text-3xl lg:text-4xl text-balance mb-4 md:mb-6"
+            >
+              Lightning-fast performance
+            </h3>
+            <p class="text-gray md:text-lg text-balance pb-4 lg:pb-0">
+              Our websites are optimized for speed and performance, ensuring
+              that your users have a seamless experience.
+            </p>
+          </div>
         </div>
       </div>
     </div>
